@@ -1,0 +1,131 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .task-manager {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  /* Task Form */
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .task-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-form button {
+    background-color: #5c6bc0;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .task-form button:hover {
+    background-color: #3f51b5;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .task-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .task-item p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .task-item button {
+    background-color: #e57373;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .task-item button:hover {
+    background-color: #f44336;
+  }
+  
+  /* Mobile-friendly adjustments */
+  @media (max-width: 768px) {
+    .task-manager {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .task-form {
+      max-width: 100%;
+    }
+  
+    .task-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-item button {
+      margin-top: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .task-form input,
+    .task-form select,
+    .task-form button {
+      font-size: 0.9rem;
+    }
+  
+    .task-item h3 {
+      font-size: 1rem;
+    }
+  
+    .task-item p {
+      font-size: 0.8rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
